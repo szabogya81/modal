@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     left:0;
+    padding: 1rem 2rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,15 +16,16 @@
     .modal {
         background-color: honeydew;
         border: 1px solid #888;
+        bottom: 25%;
         box-shadow: 2px 2px 1px #666;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        height: 50%;
         left:25%;
-        top: 25%;
-        max-height: 100%;
-        min-height: 50%;
+        padding: 1rem 2rem;
         position: fixed;
+        top: 25%;
         width: 50%;
     }
 }
@@ -38,25 +40,23 @@
     font-size: 2rem;
     flex:100%;
     height: 2rem;
-    padding-left: 85%;
-    padding-top: 1rem;
+    padding-left: 95%;
 }
 
 .modal__header{
     flex:100%;
-    line-height: 2rem;
-    margin: 0 4rem;
 }
 
 .modal__main{  
-    padding: 0 4rem;
     flex:100%;
+    min-height: 65%;
+    overflow-y: auto;
+    text-overflow: ellipsis;
 }
 
 .modal__footer {
     display: flex;
-    margin-bottom: 2rem;
-    margin-right: 4rem;
+    padding: 1rem 0;
 }
 
 .modal__footer div {
