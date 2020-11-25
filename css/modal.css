@@ -42,30 +42,33 @@
     border: none;
     font-size: 2rem;
     flex:100%;
-    height: 2rem;
-    outline: none;
-    padding-left: 95%;
+    min-height: 2.5rem;
+    margin-left: 95%;
+    min-width: 2.2rem;
 }
-
 .modal__header{
     flex:100%;
+    outline:none;
 }
 
 .modal__main{  
     flex:100%;
     min-height: 65%;
+    outline:none;
     overflow-y: auto;
     text-overflow: ellipsis;
 }
 
 .modal__footer {
     display: flex;
+    outline:none;
     padding: 1rem 0;
 }
 
 .modal__footer div {
     box-sizing: border-box;
     flex: 80%;
+    outline:none;
 }
 
 .footer__yesButton{
@@ -76,9 +79,24 @@
     margin-right: 0.5rem;
 }
 
+.footer__yesButton:focus{
+    background-color: #FFF;
+    color: #00BB00;
+    flex: 10%;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
 .footer__noButton{
     background-color: #EE0000;
     color: #fff;
+    flex: 10%;
+    font-size: 2rem;
+}
+
+.footer__noButton:focus{
+    background-color: #FFF;
+    color: #EE0000;
     flex: 10%;
     font-size: 2rem;
 }

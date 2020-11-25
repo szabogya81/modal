@@ -19,7 +19,7 @@
   <!-- Navigation Bar -->
   <div class="navbar">
     <a href="#">
-      <button class="showModal" onclick="showModal()">Modal</button>
+      <button class="showModal">Modal</button>
     </a>
     <a href="#">Link</a>
     <a href="#">Link</a>
@@ -64,13 +64,13 @@
   </div>
 
   <div class="modal" id="modal">
-    <button class="modal__closeButton" onclick="closeModal()">X</button>
+    <button class="modal__closeButton" tabindex="1">X</button>
 
-    <header class="modal__header">
+    <header class="modal__header" tabindex="0">
       <h2>CSSScript.com</h2>
     </header>
 
-    <main class="modal__main">
+    <main class="modal__main" tabindex="0">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Donec sodales enim at odio porta dictum. Nulla orci lorem, malesuada non urna bibendum, 
@@ -82,10 +82,10 @@
       </p>
     </main>
 
-    <footer class="modal__footer">
-      <div></div>
-      <button class="footer__yesButton">Okey</button>
-      <button class="footer__noButton" onclick="closeModal()">Cancel</button>
+    <footer class="modal__footer"  tabindex="0">
+      <div></div tabindex="0">
+      <button class="footer__yesButton"  tabindex="2">Okey</button>
+      <button class="footer__noButton" tabindex="3">Cancel</button>
     </footer>
 
   </div>
